@@ -1,23 +1,31 @@
-#Tuplas ()
-# As Tuplas são IMUTÁVEIS
+#Lista pt2
 
-lanche = ('Hamburguer', 'Suco', 'Pizza', 'Pudim')
-# for comida in range(0,len(lanche)):
-#   print(lanche[comida])
+teste = list()
+test.append('Gustavo')
+test.append(40)
 
-# for comida in lanche:
-#   print(comida)
+galera = list()
+galera.append(teste[:])
 
-# for pos, comida in enumerate(lanche):
-#   print(f'{pos}. {comida}')
+povo = [['João', 19], ['Ana', 33], ['Joaquim', 13], ['Maria', 47]]
+for p in povo:
+  print(p[0])
 
-# print(sorted(lanche)) #Em ordem
+pessoas = list()     
+dado = list()
+for c in range(0,3):
+  dado.append(str(input('Nome: ')))
+  dado.append(int(input('Idade: ')))
+  pessoas.append(dado[:])
+  dado.clear()
+print(pessoas)
 
-# a = (2,3,5)
-# b = (4,2,5,9,3)
-# c = a+b
-# print(c.count(5))
-# print(c.index(8)) #Qual a posição em que o elemento está
-
-pessoa = ('Gustavo', 39, 'M', 99.99)
-del(pessoa)
+totmai = totmen = 0
+for p in povo:
+  if p[1] >= 21:
+    print(f'{p[0]} é maior de idade')
+    totmai += 1
+  else:
+    print(f'{p[0]} é menor de idade')
+    totmen += 1
+print(f'maiores = {totmai}; menores {totmen}')

@@ -1,23 +1,14 @@
-#Tuplas ()
-# As Tuplas são IMUTÁVEIS
+#Dicionário
+pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}
+print(f'O {pessoas["nome"]} tem {pessoas["idade"]}anos') #aspas duplas dentro dos []
+print(pessoas.keys())
+print(pessoas.values())
+print(pessoas.items())
 
-lanche = ('Hamburguer', 'Suco', 'Pizza', 'Pudim')
-# for comida in range(0,len(lanche)):
-#   print(lanche[comida])
+del pessoas ['sexo']
+pessoas['nome'] = 'Leandro'
+for k, v in pessoas.items():
+  print(f'{k} = {v}')
 
-# for comida in lanche:
-#   print(comida)
-
-# for pos, comida in enumerate(lanche):
-#   print(f'{pos}. {comida}')
-
-# print(sorted(lanche)) #Em ordem
-
-# a = (2,3,5)
-# b = (4,2,5,9,3)
-# c = a+b
-# print(c.count(5))
-# print(c.index(8)) #Qual a posição em que o elemento está
-
-pessoa = ('Gustavo', 39, 'M', 99.99)
-del(pessoa)
+nome = "MARCADORES MOLECULARES E SUAS APLICAÇÕES NO MELHORAMENTO ANIMAL".capitalize()
+print(nome)
